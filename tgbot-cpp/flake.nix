@@ -34,8 +34,10 @@
             ];
 
             cmakeFlags = [
-              "-DENABLE_TESTS=OFF"
+              "-DENABLE_TESTS=ON"
             ];
+
+            doCheck = true;
 
             meta = with pkgs.lib; {
               description = "C++ library for Telegram Bot API";
